@@ -5,12 +5,10 @@ using std::endl;
 int main()
 {
     int A,B,X;
-    cout<< "Enter 1st number="<<endl;
     cin >> A ;
-    cout<<"Enter 2nd number="<<endl;
     cin>> B;
     X=A+B;
-    cout<<"X = "<<X;
+    cout<<"X = "<<X<<endl;
     return 0;
 
 }
