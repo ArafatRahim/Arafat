@@ -8,16 +8,22 @@ int main()
     cin>>A;
     cin>>B;
     cin>>C;
-    root=sqrt(B*B-4*A*C);
-    divisor=2*A;
-    R1=(-B+root)/divisor;
-    R2=(-B-root)/divisor;
+    root= sqrt(B*B-4*A*C);
+    if(root > 0 && A != 0)
+    {
+
+        R1 = (-B + root)/(2*A);
+        R2 = (-B - root)/(2*A);
         cout<<fixed<<setprecision(5);
         cout<<"R1 = "<<R1<<endl;
         cout<<"R2 = "<<R2<<endl;
-     if(divisor==0&&root<=0)
-        cout<<"Impossivel calcular"<<endl;
 
+
+    }
+    else
+    {
+        cout<<"Impossivel calcular"<<endl;
+    }
 
     return 0;
 }
