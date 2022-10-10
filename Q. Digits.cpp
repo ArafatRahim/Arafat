@@ -7,7 +7,7 @@ int main()
     for(i=0; i<x; i++)
     {
         cin>>n;
-        //if(n==0) cout<<n;
+        if(n==0) cout<<n;
 
         while(n!=0)
         {
