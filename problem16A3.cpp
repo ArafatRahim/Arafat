@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-vector<int>adj[8];
-bool visit[8];
+vector<int>adj[10];
+bool visit[10];
 void BFS(int start)
 {
     queue<int>q;
@@ -28,7 +28,6 @@ void BFS(int start)
 int main()
 {
     int A=0,B=1,C=2,F=3,G=4,E=5,D=6,J=7,K=8;
-    //According to the figure Example:8.7//
     adj[0].push_back(1);
     adj[0].push_back(2);
     adj[0].push_back(3);

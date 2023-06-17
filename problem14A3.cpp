@@ -31,7 +31,7 @@ int main()
         {
             for(int j=0;j<M;j++)
             {
-                a[i][j]==a[i][j]||(a[i][k]&&a[k][j]);
+                a[i][j]=a[i][j]||(a[i][k]&&a[k][j]);
             }
         }
     }
