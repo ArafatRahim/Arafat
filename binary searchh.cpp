@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     int x,y,z,f;
-    cin>>x>>y;
+    cin>>x;
     vector<int>a;
     for(int i=0; i<x; i++)
     {
@@ -11,11 +11,8 @@ int main()
         cin>>b;
         a.push_back(b);
     }
-
-    for(int j=0; j<y; j++)
-    {
-        int l=1,m;
-        int r=x;
+        int l=0,m;
+        int r=x-1;
         cin>>z;
         f=0;
         while(l<=r)
@@ -40,7 +37,6 @@ int main()
         else
             cout<<"not found"<<endl;
 
-    }
 
 
 }
